@@ -1,0 +1,50 @@
+/*Estilos Gerais*/
+body{
+    font-family: 'Roboto', 'Segoe Ul', sans-serif; /*Fonte moderna e legivel*/
+    margin: 0;
+    background-color: #f8f9fa; /*Fundo muito claro*/
+}
+
+/* 2 - Estilos da seção hero - O foco de estudo*/
+.hero-section {
+    background-color: #343a40;/*Um fundo escuro para criar contraste*/
+    color: #ffffff; /*Texto branco*/
+    /*Usamos Flexbox aqui para centralizar o container de conteúdoverticalmente*/
+    /*Isso é util se quisermos que a seção ocupe a tela inteira*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /*Define uma altura minima para a seção, igual a altura da janela de visualização*/
+    /*Isso faz com que a seção Hero ocupe a tela inteira verticalmente*/
+    min-height: 100vh;
+    /* Adiciona um padding para garantir que o conteudo não cole nas bordas*/
+    /*Em telas pequenas*/
+    padding: 20px;
+}
+
+/* 3- Container do conteudo*/
+.hero-content{
+    text-align: center; /*Centralizar todo o texto e o botão*/
+    max-width: 700px; /*Limita a largura máxima de texto para melhor legibilidade*/
+}
+
+/* 4- Estilos de tipografia - Hierarquia visual*/
+.hero-title{
+    /*Tamanho de fonte muito grande para ser o ponto de foco principal*/
+    font-size: 3.5 rem; /*56 px*/
+    /*Peso da fonte mais grosso para dar impacto*/
+    font-weight: 700;
+    line-height: 1.2; /*Espaçamento entre as linhas do titulo, caso ele quebre*/
+    margin-top: 0;
+    margin-bottom: 20px; /*Espaço abaixo do titulo*/
+}
+
+.hero-subtitle{
+    font-size: 1.25rem; /*20px*/
+    line-height: 300; /*Peso mais leve para o texto de suporte*/
+    line-height: 1.6;
+    margin-bottom: 40px; /*Espaço maior para separar o texto do botão*/
+    /*Cor um pouco mais suave que  branco puro para reduzir o contraste */
+    color: #e9ecef;
+}
